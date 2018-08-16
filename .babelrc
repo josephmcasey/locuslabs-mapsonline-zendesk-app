@@ -1,0 +1,31 @@
+{
+    "presets": [
+        ["env",
+          {
+            "targets": {
+              "browsers": [
+                "Chrome >= 60",
+                "FireFox >= 57",
+                "Safari >= 10",
+                "Explorer 11",
+                "last 4 Edge versions"
+              ]
+            },
+            "modules": false,
+            "useBuiltIns": true
+          }
+      ]
+    ],
+    "ignore": [
+      "node_modules"
+    ],
+    "plugins": [
+        ["transform-runtime", {
+        "helpers": true,
+        "polyfill": true,
+        "regenerator": true,
+        "moduleName": "babel-runtime"
+        }]
+    ]
+  }
+  
