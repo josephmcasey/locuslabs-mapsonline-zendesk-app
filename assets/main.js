@@ -49,7 +49,7 @@ function showInfo( [ accounts, venue, floor, latitude, longitude ] ) {
 
     console.log('data: ', accounts, venue, floor, latitude, longitude)
 
-    const firstAccount = accounts.split(',')[0]
+    const firstAccount = JSON.parse(accounts)[0];
 
     console.log('firstAccount: ', firstAccount)
 
@@ -69,7 +69,7 @@ function showInfo( [ accounts, venue, floor, latitude, longitude ] ) {
     setTimeout(
         () => {
             window.LocusMaps({command: 'version'}).then(console.log)
-            window.LocusMaps({command: "drawMarker", name: "Map Note Placement", lat: latitude, lng: longitude, imageURL: `https://img.locuslabs.com/js/misc/infomation-circle.svg`})
+            window.LocusMaps({command: "drawMarker", name: "Map Note Placement", lat: latitude, lng: longitude, imageURL: `https://img.locuslabs.com/js/misc/map-note-pin.svg`})
         },
         5000
     )
