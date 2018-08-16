@@ -1,0 +1,36 @@
+{ 
+    "ticket_fields": {
+        "locuslabs_account": {
+            "type": "text",
+            "title": "LocusLabs Account"
+        },
+        "venue_identifier": {
+            "type": "text",
+            "title": "Venue Identifier"
+        },
+        "geohash": {
+            "type": "text",
+            "title": "Geohash"
+        },
+        "building_identifier": {
+            "type": "text",
+            "title": "Building Identifier"
+        },
+        "floor_identifier": {
+            "type": "text",
+            "title": "Floor Identifier"
+        },
+        "latitude": {
+            "type": "decimal",
+            "title": "Latitude"
+        },
+        "longitude": {
+            "type": "decimal",
+            "title": "Longitude"
+        },
+        "ordinal": {
+            "type": "integer",
+            "title": "Ordinal"
+        }
+    }
+}
